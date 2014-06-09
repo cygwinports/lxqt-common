@@ -1,0 +1,20 @@
+inherit qt4-cmake
+
+NAME="lxqt-common"
+VERSION=0.7.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="LXQt startup scripts"
+DESCRIPTION="LXQt is the Qt port and the upcoming version of LXDE. It is the
+product of the merge between the LXDE-Qt and the Razor-qt projects: A
+lightweight, modular, blazing-fast and user-friendly desktop environment."
+HOMEPAGE="http://lxqt.org/"
+SRC_URI="http://lxqt.org/downloads/lxqt/${VERSION}/${NAME}-${VERSION}.tar.xz"
+SRC_DIR=.
+
+ARCH=noarch
+
+OBSOLETES="razorqt"
+REQUIRES="lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel"
+REQUIRES+=" lxqt-qtplugin lxqt-runner lxqt-session obconf-qt openbox pcmanfm-qt"
+REQUIRES+=" qlipper qxkb qupzilla xterm"
