@@ -1,7 +1,7 @@
-inherit qt4-cmake
+inherit qt5 cmake
 
 NAME="lxqt-common"
-VERSION=0.7.0
+VERSION=0.8.0
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="LXQt startup scripts"
@@ -10,7 +10,11 @@ product of the merge between the LXDE-Qt and the Razor-qt projects: A
 lightweight, modular, blazing-fast and user-friendly desktop environment."
 HOMEPAGE="http://lxqt.org/"
 SRC_URI="http://lxqt.org/downloads/lxqt/${VERSION}/${NAME}-${VERSION}.tar.xz"
-SRC_DIR=.
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-0.8.0-datadir.patch
+	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-0.8.0-desktop-launch.patch
+	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-xdg_data_dir.patch
+"
 
 ARCH=noarch
 
@@ -18,3 +22,5 @@ OBSOLETES="razorqt"
 REQUIRES="lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel"
 REQUIRES+=" lxqt-qtplugin lxqt-runner lxqt-session obconf-qt openbox pcmanfm-qt"
 REQUIRES+=" qlipper qxkb qupzilla xterm"
+
+export USE_QT5=1
