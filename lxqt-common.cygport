@@ -21,6 +21,7 @@ ARCH=noarch
 OBSOLETES="razorqt"
 REQUIRES="lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel"
 REQUIRES+=" lxqt-qtplugin lxqt-runner lxqt-session obconf-qt openbox pcmanfm-qt"
-REQUIRES+=" qlipper qxkb qupzilla xterm"
+REQUIRES+=" lxmenu-data oxygen-icons qlipper qpdfview qxkb qupzilla xterm"
+REQUIRES+=" dbus-x11 run xinit"
 
 export USE_QT5=1
