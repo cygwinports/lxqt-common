@@ -2,7 +2,7 @@ inherit qt5 cmake
 
 NAME="lxqt-common"
 VERSION=0.8.0
-RELEASE=2
+RELEASE=3
 CATEGORY="X11"
 SUMMARY="LXQt startup scripts"
 DESCRIPTION="LXQt is the Qt port and the upcoming version of LXDE. It is the
