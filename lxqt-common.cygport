@@ -1,19 +1,18 @@
 inherit qt5 cmake
 
 NAME="lxqt-common"
-VERSION=0.8.0
-RELEASE=3
+VERSION=0.9.1
+RELEASE=1
 CATEGORY="X11"
 SUMMARY="LXQt startup scripts"
 DESCRIPTION="LXQt is the Qt port and the upcoming version of LXDE. It is the
 product of the merge between the LXDE-Qt and the Razor-qt projects: A
 lightweight, modular, blazing-fast and user-friendly desktop environment."
 HOMEPAGE="http://lxqt.org/"
-SRC_URI="http://lxqt.org/downloads/lxqt/${VERSION}/${NAME}-${VERSION}.tar.xz"
+SRC_URI="http://downloads.lxqt.org/lxqt/${VERSION}/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-0.8.0-datadir.patch
-	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-0.8.0-desktop-launch.patch
-	http://pkgs.fedoraproject.org/cgit/lxqt-common.git/plain/lxqt-common-xdg_data_dir.patch
+	0.9.1-config-openbox.patch
+	0.9.1-config-themes.patch
 "
 
 ARCH=noarch
@@ -23,5 +22,3 @@ REQUIRES="lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel"
 REQUIRES+=" lxqt-qtplugin lxqt-runner lxqt-session obconf-qt openbox pcmanfm-qt"
 REQUIRES+=" lxmenu-data oxygen-icons qlipper qpdfview qxkb qupzilla xterm"
 REQUIRES+=" dbus-x11 run xinit"
-
-export USE_QT5=1

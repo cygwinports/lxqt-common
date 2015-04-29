@@ -1,0 +1,20 @@
+--- origsrc/lxqt-common-0.9.1/config/lxqt.conf	2015-02-14 07:42:58.000000000 -0600
++++ src/lxqt-common-0.9.1/config/lxqt.conf	2015-04-28 21:26:36.368363400 -0500
+@@ -1,5 +1,5 @@
+ [General]
+-theme=frost
++theme=Frost
+ icon_theme=oxygen
+ single_click_activate=false
+ tool_button_style=ToolButtonTextBesideIcon
+--- origsrc/lxqt-common-0.9.1/config/pcmanfm-qt/lxqt/settings.conf.in	2015-02-14 07:42:58.000000000 -0600
++++ src/lxqt-common-0.9.1/config/pcmanfm-qt/lxqt/settings.conf.in	2015-04-28 21:28:18.646351000 -0500
+@@ -15,7 +15,7 @@ ConfirmDelete=true
+ 
+ [Desktop]
+ WallpaperMode=stretch
+-Wallpaper=@LXQT_SHARE_DIR@/themes/light/simple_blue_widescreen.png
++Wallpaper=@LXQT_SHARE_DIR@/themes/Light/simple_blue_widescreen.png
+ BgColor=#000000
+ FgColor=#ffffff
+ ShadowColor=#000000

@@ -1,0 +1,19 @@
+--- origsrc/lxqt-common-0.9.1/config/openbox/menu.xml	2015-02-14 07:42:58.000000000 -0600
++++ src/lxqt-common-0.9.1/config/openbox/menu.xml	2015-04-28 21:40:41.341161300 -0500
+@@ -6,13 +6,13 @@
+   <item label="PCManFM">
+     <action name="Execute">
+     <startupnotify><enabled>yes</enabled></startupnotify>
+-    <command>pcmanfm</command></action>
++    <command>pcmanfm-qt</command></action>
+   </item>
+   <item label="Xterm">
+     <action name="Execute"><command>xterm</command></action>
+   </item>
+-  <item label="Firefox">
+-    <action name="Execute"><command>firefox</command></action>
++  <item label="QupZilla">
++    <action name="Execute"><command>qupzilla</command></action>
+   </item>
+ </menu>
+ 
